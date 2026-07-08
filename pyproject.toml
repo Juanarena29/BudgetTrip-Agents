@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "budgettrip"
+version = "0.1.0"
+description = "Planificador de itinerarios con control de presupuesto"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai-agents>=0.1.0",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "pydantic>=2.10.0",
+    "python-dotenv>=1.0.0",
+    "slowapi>=0.1.9",
+    "ics>=0.7.2",
+    "httpx>=0.28.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0",
+    "pytest-asyncio>=0.24.0",
+]
+
+[project.scripts]
+budgettrip = "budgettrip.cli:main"
+
+[tool.setuptools]
+package-dir = {budgettrip = "."}
+packages = [
+    "budgettrip",
+    "budgettrip.domain",
+    "budgettrip.application",
+    "budgettrip.application.ports",
+    "budgettrip.application.use_cases",
+    "budgettrip.application.services",
+    "budgettrip.infrastructure",
+    "budgettrip.infrastructure.agents_sdk",
+    "budgettrip.infrastructure.tools",
+    "budgettrip.infrastructure.notifications",
+    "budgettrip.interfaces",
+    "budgettrip.interfaces.api",
+    "budgettrip.interfaces.api.routers",
+    "budgettrip.interfaces.api.schemas",
+    "budgettrip.interfaces.api.security",
+    "budgettrip.interfaces.api.storage",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

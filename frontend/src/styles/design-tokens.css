@@ -1,0 +1,65 @@
+/* Primitive tokens */
+:root {
+  --color-espresso-900: #171010;
+  --color-charcoal-800: #2b2b2b;
+  --color-wine-800: #362222;
+  --color-stone-600: #423f3e;
+  --color-cream-50: #f4efea;
+  --color-cream-100: #e8e2dc;
+  --color-cream-200: #c9c2bb;
+  --color-cream-300: #a39b94;
+  --color-success: #7a9e7e;
+  --color-warning: #c4a574;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  --font-display: 'Syne', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+
+  --shadow-soft: 0 8px 32px rgb(0 0 0 / 0.35);
+  --shadow-glow: 0 0 0 1px rgb(244 239 234 / 0.06);
+}
+
+/* Semantic tokens */
+:root {
+  --color-background: var(--color-espresso-900);
+  --color-surface: var(--color-charcoal-800);
+  --color-surface-elevated: var(--color-wine-800);
+  --color-border: var(--color-stone-600);
+  --color-border-subtle: rgb(66 63 62 / 0.55);
+  --color-foreground: var(--color-cream-50);
+  --color-muted-foreground: var(--color-cream-200);
+  --color-subtle-foreground: var(--color-cream-300);
+  --color-primary: var(--color-wine-800);
+  --color-primary-foreground: var(--color-cream-50);
+  --color-accent: var(--color-stone-600);
+  --color-accent-foreground: var(--color-cream-50);
+}
+
+/* Component tokens */
+:root {
+  --chat-bg: var(--color-background);
+  --chat-surface: var(--color-surface);
+  --chat-input-bg: var(--color-charcoal-800);
+  --chat-user-bubble: var(--color-wine-800);
+  --chat-assistant-bubble: var(--color-surface);
+  --chat-input-border: var(--color-border-subtle);
+  --button-primary-bg: var(--color-wine-800);
+  --button-primary-hover: #4a2e2e;
+  --button-ghost-hover: rgb(66 63 62 / 0.35);
+  --card-bg: var(--color-surface);
+  --card-border: var(--color-border-subtle);
+}
