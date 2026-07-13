@@ -66,11 +66,11 @@ npm run dev
 
 ---
 
-![fix-paris](fix paris.png)
+![fix-paris](fixparis.png)
 
 ---
 
-![paris-ok](paris ok.png)
+![paris-ok](parisok.png)
 
 
 Open `http://localhost:5173` with the API running on `http://localhost:8000`.
