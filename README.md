@@ -63,9 +63,9 @@ npm run dev
 ## System Images
 ![landing](landing.png)
 ---
-![fix-paris](fixparis.png)
+![fix-paris](fix paris.png)
 ---
-![paris-ok](parisok.png)
+![paris-ok](paris ok.png)
 
 
 Open `http://localhost:5173` with the API running on `http://localhost:8000`.
